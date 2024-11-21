@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_inicio"
+        android:title="@string/inicio" />
+    <item
+        android:id="@+id/item_disciplina"
+        android:title="@string/disciplina" />
+    <item
+        android:id="@+id/item_trabalho"
+        android:title="@string/trabalho" />
+    <item
+        android:id="@+id/item_prova"
+        android:title="@string/prova" />
+</menu>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Gestor de Provas e Trabalhos</string>
+    <string name="id">Id*</string>
+    <string name="descricao">Descrição*</string>
+    <string name="data">Data de entrega*</string>
+    <string name="peso">Peso da nota</string>
+    <string name="nota">Nota</string>
+    <string name="obrigatorio">* = Campo obrigatório</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="disciplina_nome">Nome da Disciplina</string>
+    <string name="recuperacao">Recuperação</string>
+    <string name="apresentacao">Apresentação</string>
+    <string name="num_integrantes">Nº de integrantes</string>
+    <string name="professor">Professor</string>
+    <string name="inicio">Início</string>
+    <string name="trabalho">Trabalho</string>
+    <string name="prova">Prova</string>
+    <string name="inserir">Inserir</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="listar_disciplinas">Listar Disciplinas e Atividades</string>
+</resources>
