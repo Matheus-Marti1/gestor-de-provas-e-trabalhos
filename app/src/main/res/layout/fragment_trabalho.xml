@@ -155,15 +155,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/obrigatorio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spDisciplinaTrabalho" />
 
     <TextView
         android:id="@+id/tvListaTrabalho"
-        android:layout_width="398dp"
-        android:layout_height="111dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="6dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="6dp"
