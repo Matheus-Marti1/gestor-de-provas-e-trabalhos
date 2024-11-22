@@ -3,6 +3,7 @@
     <string name="id">Id*</string>
     <string name="descricao">Descrição*</string>
     <string name="data">Data de entrega*</string>
+    <string name="data_prova">Data da prova*</string>
     <string name="peso">Peso da nota</string>
     <string name="nota">Nota</string>
     <string name="obrigatorio">* = Campo obrigatório</string>
