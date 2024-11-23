@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Gestor de Provas e Trabalhos</string>
+    <string name="nome_aluno">Matheus Augusto Marti</string>
+    <string name="ra_aluno">RA: 1110482313017</string>
+    <string name="instrucoes1">Instruções de Utilização:</string>
+    <string name="instrucoes2">
+        1º- Cadastre as Disciplinas no menu Disciplinas;\n
+        2º- Após feito isso, cadastre os trabalhos e provas nos respectivos menus;\n
+        3º- Para modificar um item já cadastrado, primeiro use o campo Id para buscá-lo, e então faça as modificações necessárias.
+    </string>
     <string name="id">Id*</string>
     <string name="descricao">Descrição*</string>
     <string name="data">Data de entrega*</string>
@@ -21,5 +29,4 @@
     <string name="excluir">Excluir</string>
     <string name="buscar">Buscar</string>
     <string name="listar">Listar</string>
-    <string name="listar_disciplinas">Listar Disciplinas e Atividades</string>
 </resources>
