@@ -1,3 +1,7 @@
+/*
+ *@author:<Matheus Augusto Marti>
+ */
+
 package br.edu.fateczl.gestordeprovasetrabalhos.persistence;
 
 import android.annotation.SuppressLint;
@@ -8,12 +12,10 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import br.edu.fateczl.gestordeprovasetrabalhos.model.Disciplina;
 import br.edu.fateczl.gestordeprovasetrabalhos.model.Prova;
-import br.edu.fateczl.gestordeprovasetrabalhos.model.Trabalho;
 
 public class ProvaDao implements IProvaDao, ICRUDDao<Prova> {
     private final Context context;

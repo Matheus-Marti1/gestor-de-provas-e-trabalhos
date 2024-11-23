@@ -1,3 +1,7 @@
+/*
+ *@author:<Matheus Augusto Marti>
+ */
+
 package br.edu.fateczl.gestordeprovasetrabalhos.persistence;
 
 import android.annotation.SuppressLint;
@@ -10,10 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.edu.fateczl.gestordeprovasetrabalhos.model.Atividade;
 import br.edu.fateczl.gestordeprovasetrabalhos.model.Disciplina;
-import br.edu.fateczl.gestordeprovasetrabalhos.model.Prova;
-import br.edu.fateczl.gestordeprovasetrabalhos.model.Trabalho;
 
 public class DisciplinaDao implements IDisciplinaDao, ICRUDDao<Disciplina> {
 

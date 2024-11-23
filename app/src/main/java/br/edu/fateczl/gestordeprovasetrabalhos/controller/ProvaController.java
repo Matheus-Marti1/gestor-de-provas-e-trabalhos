@@ -1,7 +1,10 @@
+/*
+ *@author:<Matheus Augusto Marti>
+ */
+
 package br.edu.fateczl.gestordeprovasetrabalhos.controller;
 
 import java.sql.SQLException;
-import java.util.Collections;
 import java.util.List;
 
 import br.edu.fateczl.gestordeprovasetrabalhos.model.Prova;
