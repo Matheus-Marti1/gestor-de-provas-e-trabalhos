@@ -61,6 +61,7 @@ public class DisciplinaFragment extends Fragment {
 
     private void acaoInserir() {
         if (!validaCampos()) {
+            limpaCampos();
             return;
         }
         Disciplina disciplina = montaDisciplina();
@@ -69,8 +70,9 @@ public class DisciplinaFragment extends Fragment {
             Toast.makeText(view.getContext(), "Disciplina inserida com sucesso", Toast.LENGTH_LONG).show();
         } catch (SQLException e) {
             Toast.makeText(view.getContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+        } finally {
+            limpaCampos();
         }
-        limpaCampos();
     }
 
     private void acaoModificar() {
@@ -83,8 +85,9 @@ public class DisciplinaFragment extends Fragment {
             Toast.makeText(view.getContext(), "Disciplina atualizada com sucesso", Toast.LENGTH_LONG).show();
         } catch (SQLException e) {
             Toast.makeText(view.getContext(), e.getMessage(), Toast.LENGTH_LONG).show();
-        }
+        } finally {
         limpaCampos();
+        }
     }
 
     private void acaoExcluir() {
@@ -109,7 +112,7 @@ public class DisciplinaFragment extends Fragment {
             Disciplina disciplina = montaDisciplina();
             try {
                 disciplina = dCont.buscar(disciplina);
-                if (disciplina.getNome() != null) {
+                if (!disciplina.getNome().trim().isEmpty()) {
                     preencheCampos(disciplina);
                 } else {
                     Toast.makeText(view.getContext(), "Disciplina não encontrada", Toast.LENGTH_LONG).show();
@@ -151,7 +154,6 @@ public class DisciplinaFragment extends Fragment {
         etIdDisciplina.setText(String.valueOf(d.getId()));
         etNomeDisciplina.setText(d.getNome());
         etProfessorDisciplina.setText(d.getProfessor());
-        tvListaDisciplina.setText(d.toString());
     }
 
     private boolean validaCampos() {

@@ -142,7 +142,7 @@ public class ProvaFragment extends Fragment {
             try {
                 disciplinas = dCont.listar();
                 prova = pCont.buscar(prova);
-                if (prova.getDescricao() != null) {
+                if (!prova.getDescricao().trim().isEmpty()) {
                     preencheCampos(prova);
                 } else {
                     Toast.makeText(view.getContext(), "Prova não encontrada", Toast.LENGTH_LONG).show();

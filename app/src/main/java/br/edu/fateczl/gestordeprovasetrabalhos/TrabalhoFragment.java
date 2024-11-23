@@ -137,7 +137,7 @@ public class TrabalhoFragment extends Fragment {
             try {
                 disciplinas = dCont.listar();
                 trabalho = tCont.buscar(trabalho);
-                if (trabalho.getDescricao() != null) {
+                if (!trabalho.getDescricao().trim().isEmpty()) {
                     preencheCampos(trabalho);
                 } else {
                     Toast.makeText(view.getContext(), "Trabalho não encontrado", Toast.LENGTH_LONG).show();
