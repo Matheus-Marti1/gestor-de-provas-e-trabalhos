@@ -15,12 +15,13 @@ public class GenericDao extends SQLiteOpenHelper {
                     "professor TEXT NOT NULL);";
     private static final String CREATE_TABLE_ATIVIDADE =
             "CREATE TABLE atividade ( " +
-                    "id INTEGER NOT NULL PRIMARY KEY, " +
+                    "id_atv INTEGER NOT NULL PRIMARY KEY, " +
                     "descricao TEXT NOT NULL, " +
                     "data TEXT NOT NULL, " +
+                    "peso REAL, " +
                     "nota REAL, " +
-                    "peso REAL NOT NULL, " +
                     "tipo TEXT NOT NULL, " +
+                    "num_integrantes INTEGER, " +
                     "requer_apresentacao INTEGER, " +
                     "is_recuperacao INTEGER, " +
                     "disciplina_id INTEGER NOT NULL, " +

@@ -10,7 +10,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.fateczl.gestordeprovasetrabalhos.model.Atividade;
 import br.edu.fateczl.gestordeprovasetrabalhos.model.Disciplina;
+import br.edu.fateczl.gestordeprovasetrabalhos.model.Prova;
+import br.edu.fateczl.gestordeprovasetrabalhos.model.Trabalho;
 
 public class DisciplinaDao implements IDisciplinaDao, ICRUDDao<Disciplina> {
 
@@ -79,11 +82,11 @@ public class DisciplinaDao implements IDisciplinaDao, ICRUDDao<Disciplina> {
             cursor.moveToFirst();
         }
         while (!cursor.isAfterLast()) {
-             Disciplina disciplina = new Disciplina(cursor.getInt(cursor.getColumnIndex("id")),
-                     cursor.getString(cursor.getColumnIndex("nome")),
-                     cursor.getString(cursor.getColumnIndex("professor")));
-             disciplinas.add(disciplina);
-             cursor.moveToNext();
+            Disciplina disciplina = new Disciplina(cursor.getInt(cursor.getColumnIndex("id")),
+                    cursor.getString(cursor.getColumnIndex("nome")),
+                    cursor.getString(cursor.getColumnIndex("professor")));
+            disciplinas.add(disciplina);
+            cursor.moveToNext();
         }
         cursor.close();
         return disciplinas;
