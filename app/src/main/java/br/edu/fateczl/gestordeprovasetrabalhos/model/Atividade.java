@@ -7,14 +7,14 @@ public abstract class Atividade {
     private String descricao;
     private String data;
     private double peso;
-    private Double nota;
+    private double nota;
 
     public Atividade(int id, String descricao, String data) {
         this.id = id;
         this.descricao = descricao;
         this.data = data;
         this.peso = 0;
-        this.nota = null;
+        this.nota = 0;
     }
 
     public int getId() {
@@ -49,11 +49,11 @@ public abstract class Atividade {
         this.peso = peso;
     }
 
-    public Double getNota() {
+    public double getNota() {
         return nota;
     }
 
-    public void setNota(Double nota) {
+    public void setNota(double nota) {
         this.nota = nota;
     }
 
@@ -63,7 +63,7 @@ public abstract class Atividade {
     @Override
     public String toString() {
         return "Atividade: " + id + " - " + descricao + ", Data: " + data + ", Peso: " +
-                peso + ", Nota: " + (nota != null ? nota : "Ainda não atribuída");
+                peso + ", Nota: " + nota;
     }
 
 }

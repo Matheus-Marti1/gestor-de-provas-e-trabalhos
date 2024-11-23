@@ -29,16 +29,19 @@ public class Prova extends Atividade{
 
     @Override
     public double calcularImpactoNota() {
-        if (getNota() == null) {
+        if (getNota() == 0) {
             return 0;
         }
-        return getNota() * getPeso();
+        if (getPeso() > 1) {
+            return getNota() * (getPeso()/10);
+        } else return getNota() * getPeso();
     }
 
     @NonNull
     @Override
     public String toString() {
-        return super.toString() + ", Disciplina: " + disciplina +
-                ", Recuperação: " + (isRecuperacao ? "Sim" : "Não");
+        double notaMedia = calcularImpactoNota();
+        return super.toString() + ", Disciplina: " + disciplina.getNome() +
+                ", Recuperação: " + (isRecuperacao ? "Sim" : "Não") + ", Nota na Média: " + notaMedia;
     }
 }

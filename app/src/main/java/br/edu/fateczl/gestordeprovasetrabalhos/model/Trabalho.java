@@ -1,5 +1,7 @@
 package br.edu.fateczl.gestordeprovasetrabalhos.model;
 
+import androidx.annotation.NonNull;
+
 public class Trabalho extends Atividade {
     private boolean requerApresentacao;
     private int numIntegrantes;
@@ -38,15 +40,19 @@ public class Trabalho extends Atividade {
 
     @Override
     public double calcularImpactoNota() {
-        if (getNota() == null) {
+        if (getNota() == 0) {
             return 0;
         }
-        return getNota() * getPeso();
+        if (getPeso() > 1) {
+            return getNota() * (getPeso()/10);
+        } else return getNota() * getPeso();
     }
 
+    @NonNull
     @Override
     public String toString() {
-        return super.toString() + ", Disciplina: " + disciplina + ", Integrantes: " +
-                numIntegrantes + ", Apresentação: " + (requerApresentacao ? "Sim" : "Não");
+        double notaMedia = calcularImpactoNota();
+        return super.toString() + ", Disciplina: " + disciplina.getNome() + ", Integrantes: " +
+                numIntegrantes + ", Apresentação: " + (requerApresentacao ? "Sim" : "Não") + ", Nota na Média: " + notaMedia;
     }
 }
