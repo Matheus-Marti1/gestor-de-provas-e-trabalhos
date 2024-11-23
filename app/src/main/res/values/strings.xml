@@ -8,11 +8,11 @@
     <string name="nota">Nota</string>
     <string name="obrigatorio">* = Campo obrigatório</string>
     <string name="disciplina">Disciplina</string>
-    <string name="disciplina_nome">Nome da Disciplina</string>
+    <string name="disciplina_nome">Nome da Disciplina*</string>
     <string name="recuperacao">Recuperação</string>
     <string name="apresentacao">Apresentação</string>
     <string name="num_integrantes">Nº de integrantes</string>
-    <string name="professor">Professor</string>
+    <string name="professor">Professor*</string>
     <string name="inicio">Início</string>
     <string name="trabalho">Trabalho</string>
     <string name="prova">Prova</string>
